@@ -5,7 +5,7 @@
 
 class Graph {
     private:
-        int NULL_EDGE: // constante para aresta nula
+        int NULL_EDGE; // constante para aresta nula
         int maxVertices;
         int numVertices;
         Vertex* vertices;

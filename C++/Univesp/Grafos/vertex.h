@@ -8,10 +8,10 @@ using namespace std;
 class Vertex {
     public:
         Vertex() {
-            this.nome = "";
+            this->nome = "";
         }
         Vertex(string nome) {
-            this.nome = nome;
+            this->nome = nome;
         }
         string getNome() const {
             return nome;

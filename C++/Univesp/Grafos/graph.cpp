@@ -14,9 +14,9 @@ Graph::Graph(int max, int null_edge) {
         edges[row] = new int[maxVertices];
     }
     // populando matriz de adjacencias com valor nulo
-    for (int row = 0; row < maxVertices; row++) {
+    for(int row = 0; row < maxVertices; row++) {
         for (int col = 0; col < maxVertices; col ++) {
-            edges[row][cow] = NULL_EDGE;
+            edges[row][col] = NULL_EDGE;
         }
     } 
 }
@@ -32,7 +32,7 @@ Graph::~Graph() {
 
 int Graph::getIndex(Vertex vertex) {
     int index = 0;
-    while (!(vertex.getNome() == vertices[index].getNome())) {
+    while(!(vertex.getNome() == vertices[index].getNome())) {
         index++;
     }
     return index;
@@ -44,7 +44,7 @@ void Graph::addVertex(Vertex vertex) {
 }
 
 void Graph::addEdge(Vertex fromVertex, Vertex toVertex, int weight) {
-    int row = getIndex[fromVertex];
+    int row = getIndex(fromVertex);
     int col = getIndex(toVertex);
 
     edges[row][col] = weight;
@@ -58,3 +58,37 @@ int Graph::getWeight(Vertex fromVertex, Vertex toVertex) {
     return edges[row][col];
 }
 
+void Graph::getAdjacents(Vertex vertex, Queue &adjVertices) {
+    int fromIndex;
+    int toIndex;
+    fromIndex = getIndex(vertex);
+    for(toIndex = 0; toIndex < numVertices; toIndex++) {
+        if(edges[fromIndex][toIndex] != NULL_EDGE) {
+            adjVertices.enqueue(vertices[toIndex]);
+        }
+    }
+}
+void Graph::clearMarks() {
+    for(int i = 0; i < numVertices; i++) {
+        marks[i] = false;
+    }
+}
+
+void Graph::markVertex(Vertex vertex) {
+    int index = getIndex(vertex);
+    marks[index] = true;
+}
+
+bool Graph::isMarked(Vertex vertex) {
+    int index = getIndex(vertex);
+    return marks[index];
+}
+
+void Graph::printMatrix() {
+    for(int i = 0; i < numVertices; i++) {
+        for(int j = 0; j < numVertices; j++) {
+            std::cout << edges[i][j] << ", ";
+        }
+        std::cout << std::endl;
+    }
+}
