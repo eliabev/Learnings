@@ -1,5 +1,3 @@
-const routes = require('express').Router()
-
-// Definição das rotas
+const routes = require('express').Router();
 
 module.exports = routes;
