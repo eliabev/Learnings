@@ -12,13 +12,16 @@ Graph::Graph(int max, int null_edge) {
     // criando adjacencias
     for(int row = 0; row < maxVertices; row++) {
         edges[row] = new int[maxVertices];
-    }
-    // populando matriz de adjacencias com valor nulo
-    for(int row = 0; row < maxVertices; row++) {
         for (int col = 0; col < maxVertices; col ++) {
             edges[row][col] = NULL_EDGE;
         }
-    } 
+    }
+    // populando matriz de adjacencias com valor nulo
+    // for(int row = 0; row < maxVertices; row++) {
+    //     for (int col = 0; col < maxVertices; col ++) {
+    //         edges[row][col] = NULL_EDGE;
+    //     }
+    // } 
 }
 
 Graph::~Graph() {

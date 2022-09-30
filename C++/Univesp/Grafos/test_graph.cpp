@@ -11,7 +11,7 @@ int main() {
   
   graph.addEdge(a, b, 2);  graph.addEdge(a, c, 1);
   graph.addEdge(b, c, 3);  graph.addEdge(c, e, 4);
-  graph.addEdge(d, e, 5);
+  graph.addEdge(d, e, 5);  graph.addEdge(a, a, 1);
 
   graph.printMatrix(); 
   std::cout << std::endl;
