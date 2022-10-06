@@ -52,7 +52,7 @@ void Graph::addEdge(Vertex fromVertex, Vertex toVertex, int weight) {
 
     edges[row][col] = weight;
     // apenas se não direcionado!
-    edges[col][row] = weight;
+    // edges[col][row] = weight;
 }
 
 int Graph::getWeight(Vertex fromVertex, Vertex toVertex) {
@@ -93,5 +93,39 @@ void Graph::printMatrix() {
             std::cout << edges[i][j] << ", ";
         }
         std::cout << std::endl;
+    }
+}
+
+void Graph::getPageRanks(float* pageRanks) {
+    int* outputDegree = new int[numVertices];
+    for(int = 0; i < numVertices; i++) {
+        outputDegree[i] = 0;
+        for(int j = 0; j < numVertices; j++) {
+            if(edges[i][j] != NULL_EDGE) {
+                outputDegree[i] += 1;
+            }
+        }
+    }
+
+    float* pr_previous = new float[numVertices];
+    float* pr = new float[numVertices];
+
+    for(int i = 0; i < numVertices; i++) {
+        pr_previous = 1.0 / numVertices;
+    }
+
+    float d = .85;
+    for(int numIter = 0; numIter < 100; numIter++) {
+        pr[i] = 0;
+        for(int i = 0; i < numVertices; j++) {
+            if(edges[j][i] != NULL_EDGE) {
+                pr[i] += pr_previous[j]/outputDegree[j];
+            }
+        }
+        pr[i] = (1-d)/numVertices + d*pr[i];
+    }
+
+    for(int i = 0; i < numVertices; i++) {
+        pr_previous[i] = pr[i]
     }
 }

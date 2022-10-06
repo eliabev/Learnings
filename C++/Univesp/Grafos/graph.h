@@ -25,6 +25,7 @@ class Graph {
         void markVertex(Vertex);
         bool isMarked(Vertex);
         void printMatrix();
+        void getPageRanks(float*);
 };
 
 #endif

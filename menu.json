@@ -1,0 +1,238 @@
+    {
+        "menu": {
+            "options": [
+                {
+                    "name": "order",
+                    "isActive": true,
+                    "description": "Pedidos 🥤",
+                    "options": [
+                        {
+                            "name": "newOrder",
+                            "isActive": true,
+                            "description": "Novo Pedido 🥤",
+                            "service": "Order",
+                            "flow": "newOrder"
+                        },
+                        {
+                            "name": "myFavorites",
+                            "isActive": false,
+                            "description": "Meus favoritos ⭐",
+                            "service": "Main",
+                            "flow": "myFavorites"
+                        },
+                        {
+                            "name": "orderHistory",
+                            "isActive": false,
+                            "description": "Histórico de pedidos 📖",
+                            "service": "Order",
+                            "flow": "orderHistory"
+                        },
+                        {
+                            "name": "orderCancel",
+                            "isActive": false,
+                            "description": "Cancelamento de pedidos ❌",
+                            "service": "Order",
+                            "flow": "orderCancel"
+                        },
+                        {
+                            "name": "tracking",
+                            "isActive": false,
+                            "description": "Acompanhamento 📍",
+                            "service": "Main",
+                            "flow": "tracking"
+                        },
+                        {
+                            "name": "help",
+                            "isActive": true,
+                            "description": "Ajuda 💁",
+                            "service": "Order",
+                            "flow": "help"
+                        },
+                        {
+                            "name": "static",
+                            "isActive": false,
+                            "description": "Como conduzir seu negócio durante a Covid-19 e Retomada​ 😷",
+                            "service": "Static",
+                            "flow": "covid"
+                        }
+                    ]
+                },
+                {
+                    "name": "delivery",
+                    "isActive": false,
+                    "description": "Entrega 🚚",
+                    "options": [
+                        {
+                            "name": "tracking",
+                            "isActive": false,
+                            "description": "Acompanhamento 📍",
+                            "service": "Main",
+                            "flow": "tracking"
+                        },
+                        {
+                            "name": "showDeliveryRoute",
+                            "isActive": false,
+                            "description": "Consulta dia de Entrega 🗺️",
+                            "service": "Delivery",
+                            "flow": "showDeliveryRoute"
+                        }
+                    ]
+                },
+                {
+                    "name": "finance",
+                    "isActive": true,
+                    "description": "Pagamentos 💰",
+                    "options": [
+                        {
+                            "name": "duplicate",
+                            "isActive": true,
+                            "description": "2ª via de boletos 📝",
+                            "service": "Finance",
+                            "flow": "duplicate"
+                        },
+                        {
+                            "name": "sendReceipts",
+                            "isActive": false,
+                            "description": "Envio de comprovante 📤",
+                            "service": "Finance",
+                            "flow": "sendReceipts"
+                        },
+                        {
+                            "name": "financeStatus",
+                            "isActive": false,
+                            "description": "Consulta de situação 👀",
+                            "service": "Finance",
+                            "flow": "financeStatus"
+                        }
+                    ]
+                },
+                {
+                    "name": "equipments",
+                    "isActive": false,
+                    "description": "Equipamentos ⚙️",
+                    "service": "Equipment",
+                    "flow": "equipments"
+                },
+                {
+                    "name": "support",
+                    "isActive": false,
+                    "description": "Atendimento 👩",
+                    "options": [
+                        {
+                            "name": "opinion",
+                            "isActive": false,
+                            "description": "Opinião sobre o Atendimento 🗣️",
+                            "service": "Support",
+                            "flow": "opinion"
+                        },
+                        {
+                            "name": "sale",
+                            "isActive": false,
+                            "description": "Vendedor 👨",
+                            "options": [
+                                {
+                                    "name": "showVisitRoute",
+                                    "isActive": false,
+                                    "description": "Dias de Visita 📅",
+                                    "service": "Sale",
+                                    "flow": "showVisitRoute"
+                                },
+                                {
+                                    "name": "salesRepContacts",
+                                    "isActive": false,
+                                    "description": "Contato do Vendedor 📞",
+                                    "service": "Sale",
+                                    "flow": "salesRepContacts"
+                                },
+                                {
+                                    "name": "salesRepAbsence",
+                                    "isActive": false,
+                                    "description": "Ausência do Vendedor ❌",
+                                    "service": "Sale",
+                                    "flow": "salesRepAbsence"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "contacts",
+                            "isActive": false,
+                            "description": "Nossos Contatos ✉️",
+                            "service": "Support",
+                            "flow": "contacts"
+                        }
+                    ]
+                },
+                {
+                    "name": "notifications",
+                    "isActive": true,
+                    "description": "Notificações 🔔",
+                    "options": [
+                        {
+                            "name": "setOptIn",
+                            "isActive": true,
+                            "description": "Habilitar / Desabilitar ☑",
+                            "service": "Register",
+                            "flow": "setOptIn"
+                        }
+                    ]
+                },
+                {
+                    "name": "promotion",
+                    "isActive": false,
+                    "isPromotionActive": false,
+                    "description": "Validar cupom 📲",
+                    "service": "Promotion",
+                    "flow": "promotion"
+                },
+                {
+                    "name": "marketing",
+                    "isActive": true,
+                    "description": "Marketing 🎯",
+                    "options": [
+                        {
+                            "name": "kombo",
+                            "isActive": true,
+                            "description": "Kombo (encartes)",
+                            "service": "Static",
+                            "flow": "kombo"
+                        }
+                    ]
+                },
+                {
+                    "name": "shoppingCart",
+                    "isActive": false,
+                    "description": "Loja Virtual 🛒",
+                    "options": [
+                        {
+                            "name": "managePassword",
+                            "isActive": false,
+                            "description": "Gerenciar senha 🔐",
+                            "service": "Register",
+                            "flow": "password"
+                        },
+                        {
+                            "name": "linkToShoppingCart",
+                            "isActive": false,
+                            "description": "Link da loja virtual 🔗",
+                            "service": "Static",
+                            "flow": "linkToShoppingCart"
+                        },
+                        {
+                            "name": "linkToShoppingCart",
+                            "isActive": false,
+                            "description": "Como funciona 💡",
+                            "service": "Static",
+                            "flow": "standaloneTutorial"
+                        }
+                    ]
+                },
+                {
+                    "name": "userExit",
+                    "isActive": false,
+                    "description": "Sair 🚪",
+                    "service": "Main",
+                    "flow": "reset"
+                }
+            ]
+        }
+    }
