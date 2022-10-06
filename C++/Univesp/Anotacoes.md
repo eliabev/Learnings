@@ -17,4 +17,4 @@ Consiste em aprofundar no grafo sempre que possível. Se estamos em um nó que p
 
 ### **Busca em Largura**
 
-Explorar uma área sem se afastar do ponto inicial. Se não achamos o que queríamos, nos aprofundamos.
+Explorar uma área sem se afastar do ponto inicial. Se não achamos o que queríamos, nos aprofundamos. Procuramos pelo caminho mais curto primeiro - o "curto" não considera o peso das arestas.
