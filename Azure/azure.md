@@ -24,6 +24,21 @@ Recurso visual que ajuda a criar e gerenciar seus recursos.
 **Assinaturas:** agrupa contas de usuários e recursos criados por elas. Há limites ou cotas na quantidade de recursos criados e usados.
 **Grupos de Gerenciamento:** ajudam a gerenciar os acessos, a política e a conformidade para várias asinaturas. Todas as assinaturas herdam automaticamente as condições aplicadas ao grupo de gerenciamento.
 
-# Região
+## Região
 
 É uma área geográfica do planeta que contém pelo menos um data center próximo e conectados a uma rede de baixa latência.
+
+## Serviços Computacionais
+
+**VM:** São emulações por software de computadores físicos. Processador, memória, armazenamento e recursos de rede virtuais. VM's provêm *IaaS*.
+**Instâncias de Container e Azure Kubernetes Service:** deploy e gerenciamento de containers.
+**App Service:** API, web e apps facilmente construídos, deployados e escalados em qualquer plataforma. É um PaaS. Pode ser integrado com GitHub, Azure DevOps, etc.
+**Fucntions:** ideal quando nos preocupamos apenas com o código rodando no serviço, sem preocupações com a plataforma ou infraestrutura.
+
+Quando criamos VM's, a escolha da imagem é fundamental, pois ela funciona como um template para a criação da VM - incluindo SO, softwares, kit de desenvolvimento, etc.
+
+**VM Scale Set:** permite que você crie e gerencie um grupo de VM idênticas. O número de instâncias de VM's pode aumentar automaticamente, em resposta à demanda ou agendas. 
+
+## Redes Virtuais
+
+Azure Virtual Network é um IaaS. As redes virtuais da Azure permitem que os recursos do Azure, como apps e db, comuniquem-se uns com os outros, com usuários e computadores. Oferecem: Isolamento e segmentação; comunicação pela internet; comunicação entre recursos Azure; comunicação com recursos locais; roteamento de tráfego; filtragem de tráfego; conexão com redes virtuais.
