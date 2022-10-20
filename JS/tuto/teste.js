@@ -1,3 +1,13 @@
+try{
+    throw 'hey'
+} catch (e) {
+    console.log(e)
+}
+try {
+    throw {toString() { return "I'm not an object!"}}
+} catch(e) {
+    console.log(e)
+}
 var catchoro = {
     nome: "totó",
     raca: 'cavalo',
