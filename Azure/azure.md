@@ -67,3 +67,11 @@ Azure Virtual Network é um IaaS. As redes virtuais da Azure permitem que os rec
 * Archive Tier - dados raramente acessados.
 
 Dados do nível *cool* podem admitir níveis baixos de disponibilidade, mas mantêm os altos níveis de durabilidade
+
+## Azure AD
+É um serviço que permite logar e acessar serviços cloud da Microsoft e criados pelo dev. Azure AD pode ser usado por:
+ * Administradores TI: controlam acesso a aplicações e serviços, baseado em suas necessidades de negócio.;
+ * Devs: garantem métodos padronizados de acesso às aplicações construídas, adicionando funções de SSO à aplicação ou permitindo que um app funcione com determinado nível de credencial;
+ * Usuários: podem gerenciar seus perfis/identidades e realizar manutenções, como reset de senhas.
+
+ 
