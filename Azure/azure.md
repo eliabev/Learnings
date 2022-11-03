@@ -37,24 +37,26 @@ Recurso visual que ajuda a criar e gerenciar seus recursos.
 
 Quando criamos VM's, a escolha da imagem é fundamental, pois ela funciona como um template para a criação da VM - incluindo SO, softwares, kit de desenvolvimento, etc.
 
-**VM Scale Set:** permite que você crie e gerencie um grupo de VM idênticas. O número de instâncias de VM's pode aumentar automaticamente, em resposta à demanda ou agendas. 
+**VM Scale Set:** permite que você crie e gerencie um grupo de VM idênticas. O número de instâncias de VM's pode aumentar automaticamente, em resposta à demanda ou agendas.
 
 ## Redes Virtuais
 
 Azure Virtual Network é um IaaS. As redes virtuais da Azure permitem que os recursos do Azure, como apps e db, comuniquem-se uns com os outros, com usuários e computadores. Oferecem: Isolamento e segmentação; comunicação pela internet; comunicação entre recursos Azure; comunicação com recursos locais; roteamento de tráfego; filtragem de tráfego; conexão com redes virtuais.
 
-**Gateways VPN**: um gateway/portão virtual. VPN da Azure são deployadas numa subrede e permite as seguintes conexões: 
+**Gateways VPN**: um gateway/portão virtual. VPN da Azure são deployadas numa subrede e permite as seguintes conexões:
+
 * Conexão de datacenters com redes, através de conexões *site-to-site*;
 * Conexão de dispositivos individuais com a rede através de conexão *point-to-site*;
 * De redes virtuais com outras redes virtuais, através de conexão *network-to-network*
 
 **VPN Baseada em Política**: especificam os IP's que devem ser encriptados em cada tunnel. Esse tipo de VPN deve ser usado em situações que o requerem, como dispositivos legados, com compatibilidade apenas a redes VPN baseadas em política.
-**VPN Baseada em Rota**: é menos trabalhoso fazer dessa forma. São mais resilientes a mudanças de topologia. 
+**VPN Baseada em Rota**: é menos trabalhoso fazer dessa forma. São mais resilientes a mudanças de topologia.
 
 ## Azure Storage
 
 **Disk Storage**: provê discos para as VM Azure. Apps e serviços podem acessar esses discos. Podemos usar SSD e HD.
 **Blob Storage**: não te obriga a armazenar um tipo específico de dados. Pode ser texto ou dados binários. Podemos subir diversos arquivos simultaneamente. É ideal para:
+
 * Prover imagens ou documentos diretamente para sites;
 * Armazenamento de arquivos para uso distribuído;
 * Streaming de vídeos e áudio;
