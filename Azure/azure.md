@@ -71,13 +71,37 @@ Azure Virtual Network é um IaaS. As redes virtuais da Azure permitem que os rec
 Dados do nível *cool* podem admitir níveis baixos de disponibilidade, mas mantêm os altos níveis de durabilidade
 
 ## Azure AD
+
 É um serviço que permite logar e acessar serviços cloud da Microsoft e criados pelo dev. Azure AD pode ser usado por:
- * Administradores TI: controlam acesso a aplicações e serviços, baseado em suas necessidades de negócio.;
- * Devs: garantem métodos padronizados de acesso às aplicações construídas, adicionando funções de SSO à aplicação ou permitindo que um app funcione com determinado nível de credencial;
- * Usuários: podem gerenciar seus perfis/identidades e realizar manutenções, como reset de senhas.
+
+* Administradores TI: controlam acesso a aplicações e serviços, baseado em suas necessidades de negócio.;
+* Devs: garantem métodos padronizados de acesso às aplicações construídas, adicionando funções de SSO à aplicação ou permitindo que um app funcione com determinado nível de credencial;
+* Usuários: podem gerenciar seus perfis/identidades e realizar manutenções, como reset de senhas.
 
  O Azure AD providencia serviços de:
- * Autenticação: inclui verificar a identidade para acessar aplicações e serviços. Também inclui funcionalidades como auto reset de senha, MFA, lista de senhas banidas e serviços de smart lockout;
- * Single sign-on: SSO permite lembrar apenas de um login e senha para acessar diversos serviços.;
- * Gerenciamento de apps: é possível gerenciar seus apps na nuvem e "on-premises" usando o Azure AD. Funcionalidades como Proxy de app, apps SaaS, portal My Apps e SSO proporcionam uma melhor experiência para o user;
- * Gerenciamento de dispositivo: junto das contas individuais, Azure permite o registro de dispositivos. Isso permite que os dispositivos sejam gerenciados por serviços com o Intune
+
+* Autenticação: inclui verificar a identidade para acessar aplicações e serviços. Também inclui funcionalidades como auto reset de senha, MFA, lista de senhas banidas e serviços de smart lockout;
+* Single sign-on: SSO permite lembrar apenas de um login e senha para acessar diversos serviços.;
+* Gerenciamento de apps: é possível gerenciar seus apps na nuvem e "on-premises" usando o Azure AD. Funcionalidades como Proxy de app, apps SaaS, portal My Apps e SSO proporcionam uma melhor experiência para o user;
+* Gerenciamento de dispositivo: junto das contas individuais, Azure permite o registro de dispositivos. Isso permite que os dispositivos sejam gerenciados por serviços com o Intune
+
+ Também ajuda na manutenção de deployment *sob premissa*. Com o passar do tempo, pudemos ver que a segurança não precisa estar em conflito com a conveniência. **Senhas + 2FA**: Alta segurança mas baixa conveniência. **Autenticação "*passwordless*"**: alta segurança e conveniência. **Apenas senha**: baixa segurança.
+ *Autenticação sem senha* é uma forma de se autenticar com facilidade e segurança, usando alguma informação de dentro do dispositivo, algo que você sabe ou algo que você é.
+
+ *Identidades externas* são os usuários, vendors, dispositivos, etc., de fora de sua organização que podem se comunicar com seus serviços. **Colaboração B2B**: permite que os usuários externos usem sua *identidade* preferida para logar nos serviços da Azure. São representados no directory, geralmente, como guests. **B2B conexão direta**: estabelece uma confiança de duas vias com outro serviço Azure. Não são visíveis no directory, mas podem ser vistos no Teams e gerenciados por lá. **Azure AD B2C**: serviços modernos Saas ou apps customizados para clientes/consumidores, com o Azure AD B2C fazendo a autenticação e gerenciamento.
+
+*Acesso Condicional* é uma ferramenta que a Azure AD usa para permitir ou negar acessos a recursos, baseada em sinais dos usuários. Por exemplo, quem ele é, onde está e de qual dispositivo ele está logando.
+
+**Azure RBAC**: Azure Role Level Access Control, para permitir que certos recursos sejam liberados para um *role level*, em vez de liberar manualmente de pessoa para pessoa.
+
+**Zero Trust Model**: Verifica e autoriza, baseado em todos os dados disponíveis. Mínimo de privilégios necessários disponíveis.
+
+**Defense-in-depth**: protege a informação e evita seu roubo por pessoas que não estão autorizadas a acessá-la. É dividido em camadas. Se uma falha, outra está presente para tomar seu lugar.
+
+* The physical security layer is the first line of defense to protect computing hardware in the datacenter.
+* The identity and access layer controls access to infrastructure and change control.
+* The perimeter layer uses distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+* The network layer limits communication between resources through segmentation and access controls.
+* The compute layer secures access to virtual machines.
+* The application layer helps ensure that applications are secure and free of security vulnerabilities.
+* The data layer controls access to business and customer data that you need to protect.
