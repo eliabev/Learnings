@@ -1,38 +1,17 @@
-try{
-    throw 'hey'
-} catch (e) {
-    console.log(e)
-}
+const alunos = [ 
+	{ nome: "Jaqueline", bolsista: 12 },
+	{ nome: "Fernando", bolsista: 14 },
+	{ nome: "Henrique", bolsista: 27 },
+	{ nome: "Joelma", bolsista: 100 },
+]
+console.log(encodeURI('http://cocacolauberlandia.com.br//Categories/isot%C3%B4nico.png'))
+
+let urlToEncode
+
 try {
-    throw {toString() { return "I'm not an object!"}}
-} catch(e) {
-    console.log(e)
-}
-var catchoro = {
-    nome: "totó",
-    raca: 'cavalo',
-    filhos: ['andre', 'pedro', 'bartolomeu', 'filipe']
+     urlToEncode = decodeURI(this.url)
+} catch (err) {
+  urlToEncode = this.url
 }
 
-console.log(catchoro.raca)
-
-console.log(typeof 14 == "Number".toLowerCase())
-
-let variousNumbers = 27.1545040398;
-console.log(variousNumbers.toFixed(3))
-
-let um = 1;
-console.log(um++, ++um);
-
-const biggestNum     = Number.MAX_VALUE
-const smallestNum    = Number.MIN_VALUE
-const infiniteNum    = Number.POSITIVE_INFINITY
-const negInfiniteNum = Number.NEGATIVE_INFINITY
-const notANum        = Number.NaN
-
-console.log(biggestNum)
-console.log(smallestNum)
-console.log(infiniteNum)
-console.log(negInfiniteNum)
-console.log(notANum)
-console.log(Infinity)
+["5519976031482@wa.gw.msging.net", "5511986965137@wa.gw.msging.net"].includes(contextObj.alternativeAccount)
