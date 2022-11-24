@@ -1,0 +1,19 @@
+{
+    "Sales": {
+        "phoneNumber": "0800 61 5000",
+        "officeHours": "de segunda a sexta, de 09h às 15h30 e aos sábados de 08h às 12h."
+    },
+    "Equipments": {
+        "phoneNumber": "0800 61 5000",
+        "officeHours": "de segunda a sexta, de 08h às 19h, e aos sábados, de 08h às 14h."
+    },
+    "Finance": {
+        "phoneNumber": "0800 61 5000",
+        "officeHours": "segunda a sábado, de 08h às 12h"
+    },
+    "OurContacts": {
+        "phoneNumber": "0800 61 5000",
+        "officeHours": "de segunda a sexta, de 08h às 19h, e aos sábados, de 08h às 14h.",
+        "clientChannelWebsite": "www.brasal.com.br/canalclientes"
+    }
+}

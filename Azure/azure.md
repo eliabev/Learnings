@@ -76,4 +76,8 @@ Dados do nível *cool* podem admitir níveis baixos de disponibilidade, mas mant
  * Devs: garantem métodos padronizados de acesso às aplicações construídas, adicionando funções de SSO à aplicação ou permitindo que um app funcione com determinado nível de credencial;
  * Usuários: podem gerenciar seus perfis/identidades e realizar manutenções, como reset de senhas.
 
- 
+ O Azure AD providencia serviços de:
+ * Autenticação: inclui verificar a identidade para acessar aplicações e serviços. Também inclui funcionalidades como auto reset de senha, MFA, lista de senhas banidas e serviços de smart lockout;
+ * Single sign-on: SSO permite lembrar apenas de um login e senha para acessar diversos serviços.;
+ * Gerenciamento de apps: é possível gerenciar seus apps na nuvem e "on-premises" usando o Azure AD. Funcionalidades como Proxy de app, apps SaaS, portal My Apps e SSO proporcionam uma melhor experiência para o user;
+ * Gerenciamento de dispositivo: junto das contas individuais, Azure permite o registro de dispositivos. Isso permite que os dispositivos sejam gerenciados por serviços com o Intune
